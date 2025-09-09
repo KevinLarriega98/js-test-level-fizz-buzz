@@ -2,9 +2,9 @@
  * Responsabilidad: gestionar el los flujos de que recibe y muestra la interfáz
  * */
 function showResult(output) {
-    const resultDiv = document.getElementById("result");
-    const errorMsg = document.getElementById("errorMsg");
-    const historyUl = document.getElementById("history");
+    const resultDiv = document.getElementById("result")
+    const errorMsg = document.getElementById("errorMsg")
+    const historyUl = document.getElementById("history")
 
     if (output.status === "error") {
         errorMsg.textContent = output.message
