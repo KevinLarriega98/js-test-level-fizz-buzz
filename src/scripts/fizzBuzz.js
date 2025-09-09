@@ -13,11 +13,11 @@
 function fizzBuzz(number) {
     try {
         if (isNaN(number)) {
-            throw new Error("The entered value is not a number")
+            throw new Error("El valor introducido no es un número")
         }
 
         if (number <= 0) {
-            throw new Error("The value entered must be greater than 0")
+            throw new Error("El valor introducido debe ser mayor a 0")
         }
 
         let result = ""
@@ -33,7 +33,7 @@ function fizzBuzz(number) {
 
         return {
             status: "ok",
-            message: "Operation performed successfully",
+            message: "Operación realizada correctamente",
             data: { number, result }
         }
 

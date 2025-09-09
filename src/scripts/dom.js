@@ -14,6 +14,7 @@ function showResult(output) {
         resultDiv.textContent = `${output.data.result}`
 
         const li = document.createElement("li")
+        li.classList.add("list-group-item")
         li.textContent = `${output.data.number}: ${output.data.result}`
         historyUl.appendChild(li)
     }
