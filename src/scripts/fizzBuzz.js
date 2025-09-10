@@ -10,7 +10,7 @@
             }
     }
  * */
-function fizzBuzz(number) {
+export function fizzBuzz(number) {
     try {
         if (isNaN(number)) {
             throw new Error("El valor introducido no es un número")
@@ -21,19 +21,25 @@ function fizzBuzz(number) {
         }
 
         let result = ""
+        let message = ""
+
         if (number % 3 === 0 && number % 5 === 0) {
             result = "FizzBuzz"
+            message = "El número es divisible por 3 y 5"
         } else if (number % 3 === 0) {
             result = "Fizz"
+            message = "El número es divisible por 3"
         } else if (number % 5 === 0) {
             result = "Buzz"
+            message = "El número es divisible por 5"
         } else {
-            result = number.toString()
+            result = number
+            message = "El número no es divisible por 3 y 5"
         }
 
         return {
             status: "ok",
-            message: "Operación realizada correctamente",
+            message,
             data: { number, result }
         }
 

@@ -1,8 +1,8 @@
 /**
  * Responsabilidad: gestionar los eventos
  * */
-// import { fizzBuzz } from "./fizzBuzz"
-// import { showResult } from "./dom"
+import { fizzBuzz } from "./fizzBuzz.js"
+import { showResult } from "./dom.js"
 
 document.getElementById("processBtn").addEventListener("click", () => {
     const input = document.getElementById("numberInput").value
